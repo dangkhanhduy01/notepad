@@ -16,7 +16,7 @@ public class Program {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        NotePad app = new  NotePad("demo Notepad");
+       NotePad app = new  NotePad("demo Notepad");
         app.setVisible(true);
     }
     }

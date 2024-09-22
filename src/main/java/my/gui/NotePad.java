@@ -4,6 +4,7 @@
  */
 package my.gui;
 import java.awt.Font;
+import java.awt.event.KeyEvent;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -19,6 +20,7 @@ import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
+import javax.swing.KeyStroke;
 
 /**
  *
@@ -73,6 +75,11 @@ public class NotePad extends JFrame {
         mFormat.add(itemWrap = new JCheckBoxMenuItem("Word Wrap", true));
         mFormat.add(itemFont = new JMenuItem("Font..."));
 
+         
+        itemOpen.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_O, KeyEvent.CTRL_DOWN_MASK));
+        itemSave.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S, KeyEvent.CTRL_DOWN_MASK));
+        itemSaveAs.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S, KeyEvent.CTRL_DOWN_MASK + KeyEvent.SHIFT_DOWN_MASK));
+        itemPrint.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_P, KeyEvent.CTRL_DOWN_MASK));
         setJMenuBar(mBar);
     }
 
@@ -177,4 +184,5 @@ public class NotePad extends JFrame {
         public JFontChooser() {
         }
     }
+
 }
