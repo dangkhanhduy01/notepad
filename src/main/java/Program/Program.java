@@ -4,7 +4,7 @@
  */
 package Program;
 
-import my.gui. JNotePad;
+import my.gui. NotePad;
 
 /**
  *
@@ -16,7 +16,7 @@ public class Program {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        JNotePad app = new  JNotePad("demo Notepad");
+        NotePad app = new  NotePad("demo Notepad");
         app.setVisible(true);
     }
     }
