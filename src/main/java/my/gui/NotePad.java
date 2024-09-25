@@ -182,6 +182,7 @@ public class NotePad extends JFrame {
         }
 
         public JFontChooser() {
+            
         }
     }
 
